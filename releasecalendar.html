@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- DEVELOPER: Charles Gill Jr, IS117-101, Fall 2021 -->
+    <meta charset="UTF-8">
+    <title>My First Bootstrap Page</title>
+    <!-- CSS only -->
+    <link href="css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+    <style>
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 400px;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="row">
+            <nav class="navbar navbar-expand-md
+                    justify-content-start
+                    bg-dark navbar-dark
+                    col-12">
+
+                <!-- Brand -->
+                <a class="navbar-brand" href="index.html">Kicks For Sale</a>
+                <!-- Responsive Button for the smaller menu -->
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <!-- Links -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                               data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                More
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="releasecalendar.html">Release Calendar</a>
+                                <a class="dropdown-item" href="upcomingreleases.html">Upcoming Releases</a>
+                            </div>
+                        </li>
+                        <li class="img" id="Logo">
+                            <img src="css/Logo.jpeg" alt="Kicks For Sale" style="width:600px;height:100px; position: relative"
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="gallery">
+                <a>
+                    <img src="css/release.jpg" alt="Jordan 5 Grape" width="600" height="400">
+                </a>
+                <div class="desc">
+                </div><table border="1">
+
+                <tr>
+                    <th colspan="7">December 2021</th>
+                </tr>
+
+                <tr>
+                    <th>Su</th>
+                    <th>Mo</th>
+                    <th>Tu</th>
+                    <th>We</th>
+                    <th>Th</th>
+                    <th>Fr</th>
+                    <th>Sa</th>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                </tr>
+
+                <tr>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                </tr>
+
+                <tr>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                </tr>
+
+                <tr>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                </tr>
+            </table>
+            </div>
+
+            <div class="gallery">
+                <a>
+                    <img src="css/jordan1release.jpg" alt="A Ma Maniere x Air Jordan 1" width="600" height="400">
+                </a>
+                <div class="desc" >
+                    <h2>A Ma Maniere x Air Jordan 1</h2>
+                    <h3>Release Date: Dec 3rd 2021</h3>
+                    Collaborator of the year? A Ma Maniére is certainly making a strong case for that cause due to their impressive and consciously concepted projects with Nike, Jordan, and adidas in 2021. Acting as a sturdy bookend to their eventful 2021 is their Air Jordan 1 Retro High OG, officially revealed on their social channels and confirmed for a release on November 24th, 2021. It features a cream white upper with a plum-like shade accented by a reptile-textured Swoosh logo and ankle, completing a luxurious package that mirrors the quality of their Air Jordan 3 collaboration of earlier this year.
+
+                </div>
+            </div>
+
+            <div class="gallery">
+                <a>
+                    <img src="css/1midXmas.jpg" alt="Jordan 1 Ugly Christmas Sweater" width="600" height="400">
+                </a>
+                <div class="desc">
+                    <h2>Air Jordan 1 Mid “Ugly Christmas Sweater”</h2>
+                    <h3>Release Date: Dec 9th 2021, $105</h3>
+                    The tradition of overtly festive, questionably designed sweaters will undoubtedly continue in 2021, and this year the Air Jordan 1 Mid is looking to join in on the fun. The ubiquitous silhouette has appeared in kids-exclusive sizing, complete with a holiday-friendly red, green, white and black colorway, but with a decorative boost that harkens back to a playful custom that has been synonymous with Christmas for decades.
+                    The Air Jordan 1 Mid “Ugly Christmas Sweater” features a patterned knit on the mid-panel and ankle featuring basketballs (that look like snowflakes) and Michael Jordan’s 23 jersey number. Hits of green connected each symbol, achieving a wreath-like aesthetic. The color choices on the ankle switches things around, but still centered around the unmistakeable Yule-tide look.
+                </div>
+            </div>
+
+            <div class="gallery">
+                <a>
+                    <img src="css/whatelse.jpg" alt="What else?" width="600" height="400">
+                </a>
+                <div class="desc">
+                    <b>12-3:</b>A Ma Maniere x Air Jordan 1, M$200, PS$80, I$60
+                    <br>
+                    <b> 12-4:</b>Air Jordan 1 "GORE-TEX", M$200
+                    <br>
+                    <b>  12-8:</b>Air Jordan 1 Low "Bred Toe", M$100, GS$75
+                    <br>
+                    <b>  12-9:</b>Air Jordan 1 Mid "Ugly Christmas Sweater", GS$105
+                    <br>
+                    <b> 12-11:</b>Air Jordan 11 "2021 Cool Grey", M$225, GS$185, PS$100, I$80
+                    <br>
+                    <b>  12-15:</b>Air Jordan 4 "Wild Things", GS$150, PS$85, I$65
+                    <br>
+                    <b>  12-18:</b>Air Jordan 1 "Archaeo Brown", M$170
+                    <br>
+                    <b>  12-22:</b>Air Jordan 1 Retro High OG, W$170
+                    <br>
+                    <b>12-25:</b>Air Jordan 1 Retro High OG, M$170
+                    <br>
+                    <b><u>LEGEND</u></b>
+                    <br>
+                    <b>M:</b>Mens
+                    <br>
+                    <b>W:</b>Womens
+                    <br>
+                    <b>GS:</b>Grade School
+                    <br>
+                    <b>PS:</b>Pre-School
+                    <br>
+                    <b>I:</b>Infant
+                </div>
+            </div>
+
+        </div>
+ <footer class="footer page-footer font-small ">
+     <div class="container">
+        <div class="row">
+            <span class="text-muted">&copy; Charles Gill Jr IS117, 2021 |  Terms Of Use  |  Privacy Statement</span>
+        </div>
+     </div>
+  </footer>
+</div>
+
+
+    <!-- Javascript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+</script>
+
+</body>
+</html>

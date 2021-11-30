@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- DEVELOPER: Charles Gill Jr, IS117-101, Fall 2021 -->
+    <meta charset="UTF-8">
+    <title>My First Bootstrap Page</title>
+    <!-- CSS only -->
+    <link href="css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+    <style>
+        li.nav-item{
+            background-color: aliceblue;
+            color: aliceblue;
+        }
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+            color: aliceblue;
+            background-color: darkblue;
+
+        }
+        body{
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="row">
+            <nav class="navbar navbar-expand-md
+                    justify-content-start
+                    bg-dark navbar-dark
+                    col-12">
+
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">Kicks For Sale</a>
+                <!-- Responsive Button for the smaller menu -->
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <!-- Links -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                               data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                More
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="releasecalendar.html">Release Calendar</a>
+                                <a class="dropdown-item" href="upcomingreleases.html">Upcoming Releases</a>
+                            </div>
+                        </li>
+                        <li class="img" id="Logo">
+                            <img src="css/Logo.jpeg" alt="Kicks For Sale" style="width:600px;height:100px; position: relative"
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="gallery">
+                <a target="_blank" href="Grape5.html">
+                    <img src="css/Grape5.jpg" alt="Jordan 5 Grape" width="600" height="400">
+                </a>
+                <div class="desc">The Air Jordan 5 Retro 'Alternate Grape' delivers a variation on the silhouette's classic OG colorway from 1990. The upper, outfitted entirely in purple suede, sits atop a black foam midsole with speckled shark tooth detailing in emerald green.</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="Dior1.html">
+                    <img src="css/Dior1.jpg" alt="Jordan 1 Dior" width="600" height="400">
+                </a>
+                <div class="desc">This Dior x Air Jordan 1 features a White and Grey upper with “Air Dior” branding on the tongues and above the Wings logo. An all-over printed Swoosh logo on the sides atop a co-branded icy translucent outsole with a Silver Jumpman and “Air Dior” Wings hangtag completes the design.</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="Concord11.html">
+                    <img src="css/Concord11.jpeg" alt="Jordan 11 Concord" width="600" height="400">
+                </a>
+                <div class="desc">Among the pantheon of timeless sneaker classics is the Air Jordan 11 “Concord”, the stylish white and black patent leather colorway of Tinker Hatfield’s enduring design from 1995.</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="Carmine6.html">
+                    <img src="css/Carmine6.jpg" alt="Jordan 6 Carmine" width="600" height="400">
+                </a>
+                <div class="desc">The “Carmine” colorway made its debut back in 1991, and was the first Air Jordan 6 to have colored panels on the upper. They returned in the Countdown Pack in 2008, followed by its most recent appearance in 2014.</div>
+            </div>
+
+        </div>
+ <footer class="footer page-footer font-small ">
+     <div class="container">
+        <div class="row">
+            <span class="text-muted">&copy; Charles Gill Jr IS117, 2021 |  Terms Of Use  |  Privacy Statement</span>
+        </div>
+     </div>
+  </footer>
+</div>
+
+
+    <!-- Javascript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+</script>
+
+</body>
+</html>

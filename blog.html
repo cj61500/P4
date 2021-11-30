@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- DEVELOPER: Charles Gill Jr, IS117-101, Fall 2021 -->
+    <meta charset="UTF-8">
+    <title>My First Bootstrap Page</title>
+    <!-- CSS only -->
+    <link href="css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+    <style>
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 400px;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="row">
+            <nav class="navbar navbar-expand-md
+                    justify-content-start
+                    bg-dark navbar-dark
+                    col-12">
+
+                <!-- Brand -->
+                <a class="navbar-brand" href="index.html">Kicks For Sale</a>
+                <!-- Responsive Button for the smaller menu -->
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <!-- Links -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                               data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                More
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="releasecalendar.html">Release Calendar</a>
+                                <a class="dropdown-item" href="upcomingreleases.html">Upcoming Releases</a>
+                            </div>
+                        </li>
+                        <li class="img" id="Logo">
+                            <img src="css/Logo.jpeg" alt="Kicks For Sale" style="width:600px;height:100px; position: relative"
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="gallery">
+                <a target="_blank" href="Grape5.html">
+                    <img src="css/Grape5.jpg" alt="Jordan 5 Grape" width="600" height="400">
+                </a>
+                <div class="desc">A personal favorite of mine, the Grape 5s were a classic colorway that originally came in black and white.<br>
+                                  After never getting a chance to own the beautiful original pair, when these were released with a purple suede upper, they were an immediate buy.
+
+                </div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="Dior1.html">
+                    <img src="css/Dior1.jpg" alt="Jordan 1 Dior" width="600" height="400">
+                </a>
+                <div class="desc">A dream shoe for many, a waste of money to others, a beautiful sight to all. The Dior Jordan 1s are a piece of art that are scarce these days, however if you can get
+                your hands on a pair for under $5,000 consider yourself lucky.
+                </div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="Concord11.html">
+                    <img src="css/Concord11.jpeg" alt="Jordan 11 Concord" width="600" height="400">
+                </a>
+                <div class="desc">The classiest of the Jordan brand steams off of this shoe. The Concord 11 was a shoe that my Father wanted to wake up to on Christmas morning as a child and I
+                found myself in the same situation. Pleased to call myself an owner of this pair, the Concord 11s stand out to those who know what they are and subtly
+                    show a different type of class when compared to other Jordan Brand shoes.
+                </div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="Carmine6.html">
+                    <img src="css/Carmine6.jpg" alt="Jordan 6 Carmine" width="600" height="400">
+                </a>
+                <div class="desc">The “Carmine” colorway is well known for its striking reds in the upper and toe, and I feel as if that stands to this day.
+                The red on white in the OG Carmines stood out on their own, however the latest refresh has an Icy Blue sole that took my breathe away immediately. A true piece of art similar to the Dior 1s in my mind, just without the Collaboration pricetag.
+                </div>
+            </div>
+
+        </div>
+ <footer class="footer page-footer font-small ">
+     <div class="container">
+        <div class="row">
+            <span class="text-muted">&copy; Charles Gill Jr IS117, 2021 |  Terms Of Use  |  Privacy Statement</span>
+        </div>
+     </div>
+  </footer>
+</div>
+
+
+    <!-- Javascript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+</script>
+
+</body>
+</html>
